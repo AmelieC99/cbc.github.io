@@ -1,0 +1,25 @@
+#reservation {
+    background-color: #dfdbdb;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#reservation h2 {
+    color:  #d32f2f;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #771a13;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d32f2f;
+}

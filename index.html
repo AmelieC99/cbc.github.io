@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="stylesheet" href="menu.css">
+    <title>C'est bon Ça</title>
+    <script src="https://kit.fontawesome.com/58540f1019.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1 >C'est bon Ca</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p><strong>C'est bon Ça</strong> is a restaurant founded by two passionate young students, Fred and Lizzy.</p> 
+                <p>Located in <strong>Cologne, Marseille, and Berlin</strong>, our mission is simple: to serve fresh, delicious food that reflects our love for culinary creativity.</p>
+                <p>From sandwiches to gourmet meals, our menu offers a variety of dishes inspired by international cuisine with French roots. We take pride in our ever-changing menu, ensuring there's always something new and exciting to try.</p>
+                <p>Join us at C'est bon Ça and experience the flavors of our unique culinary vision.</p>
+            </div>
+            <div class="section-picture about-picture">
+                <img src="images/about.jpg" alt="About Us">
+            </div>
+        </div>
+    </section>    
+
+    <section id="locations">
+        <h2>Our Locations</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="images/cologne.jpg" alt="Cologne">
+                <div class="overlay">
+                    <h3>Cologne</h3>
+                    <p>789 Cologne Place, 51105 Cologne, Germany</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="images/marseille.jpg" alt="Marseille">
+                <div class="overlay">
+                    <h3>Marseille</h3>
+                    <p>23 Marseille Street, 13001 Marseille, France</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="images/berlin.jpg" alt="Berlin">
+                <div class="overlay">
+                    <h3>Berlin</h3>
+                    <p>456 Berlin Avenue, 10969 Berlin, Germany</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="images/menu2.jpg" alt="Menu">
+                <div class="menu-item-description"><strong>Pumpkin and Carrot Soup</strong></div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu.jpg" alt="Menu">
+                <div class="menu-item-description"><strong>Menu through seasons</strong></div>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu3.jpg" alt="Menu">
+                <div class="menu-item-description"><strong>Breakfast Eggs and Vegetables</strong></div>
+            </div>
+        </div>
+        <p>Our menu features a variety of easy but delicious dishes that will satisfy your taste buds. From hearty soups to flavorful entrees, we have something for everyone.</p>
+        <a href="Menu/Menu.pdf" target="_blank" class="menu-button">See the Menu</a>
+    </section>        
+
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <div class="section-picture events-picture">
+            <img src="images/events.jpg" alt="Upcoming Events">
+            <img src="images/events2.jpg" alt="Upcoming Events">
+            <img src="images/events3.jpg" alt="Upcoming Events">
+        </div>
+        <p>Stay tuned for our upcoming events, including live music nights, cooking classes, and special tasting events.</p>
+    </section>
+
+    <section id="reservation">
+        <h2>Make a Reservation</h2>
+        <div class="reservation-form">
+            <form action="reservation.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+    
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+    
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+    
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+    
+                <button type="submit">Submit Reservation</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For any inquiries or to make a reservation, please contact us at:</p>
+        <p>Email: info@cestbonca.com</p>
+        <p>Phone: +49 152 4567890</p>
+    </section>   
+
+    <footer>
+        <p>&copy; 2024 C'est bon Ça. All rights reserved.</p>
+        <div class="social-icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+    </footer>
+</body>
+</html>
